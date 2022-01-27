@@ -59,7 +59,7 @@ const HomeView = () => {
                 <p>Some of my Projects:</p>
             <ul >
                 <li > 
-                <a  href="https://burgerwebsitee.netlify.app" target='_blank' rel='noopener noreferrer'>Burchor Burger Website</a><br></br>
+                <a  href="https://burgerwebsitee.netlify.app" target='_blank' rel='noopener noreferrer'>Brochure Burger Website</a><br></br>
                 <span>- HTML CSS JavaScript Bootstrap React Js -</span>
                 </li>
                 <li>
