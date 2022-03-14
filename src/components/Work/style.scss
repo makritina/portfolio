@@ -14,14 +14,16 @@
 }
 
 @media screen and (max-width:800px) {
-    .wrap {
-        height: 100%;
-        position: relative;
-        top: 6rem;
-        width: 100%;
-        left: 0;
+    .work {
+        .wrap {
+            height: 100%;
+            position: relative;
+            top: 6rem;
+            width: 100%;
+            left: 0;
 
-        background-color: #1D1D1D;
+            background-color: #1D1D1D;
+        }
     }
 }
 
