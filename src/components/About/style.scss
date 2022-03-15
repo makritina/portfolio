@@ -2,45 +2,58 @@
 
     background-color: #1D1D1D;
     color: #fff;
-}
 
-
-@media screen and (max-width:800px) {
     .wrap {
-        height: 100%;
-        position: relative;
-        top: 6rem;
-        width: 100%;
-        left: 0;
-        background-color: #1D1D1D;
-        padding: 8rem 8rem 0;
-
-
-        .aboutme #pabout {
-            font-size: 2.3rem;
-            padding-bottom: 5rem;
-        }
-
-    }
-}
-
-.wrap {
-    .skills {
-        position: relative;
+        z-index: 10;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: 100vh;
+        width: calc(100% - 13rem);
+        position: relative;
+        left: 13rem;
+
+        .skills {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
 
-        span {
-            padding: 1rem;
-            font-size: 1.5rem;
-            font-weight: 700;
+            span {
+                padding: 1rem;
+                font-size: 1.5rem;
+                font-weight: 700;
 
+            }
         }
     }
 }
+
+@media screen and (max-width:800px) {
+    .about {
+        position: relative;
+        background-color: red;
+
+        .wrap {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            .aboutme #pabout {
+                font-size: 2.3rem;
+                padding-bottom: 5rem;
+            }
+        }
+    }
+}
+
+
+
+
 
 .aboutme {
     #pabout {
