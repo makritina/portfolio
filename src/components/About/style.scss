@@ -169,6 +169,25 @@
 
     }
 
+    @media screen and (max-width:480px) {
+        .about {
+
+            .wrap {
+
+                h1 {
+                    font-size: 3.2rem;
+                }
+
+                #pabout {
+                    font-size: 1.7rem !important;
+                    padding: 0 !important;
+                }
+
+            }
+        }
+
+    }
+
 
     .progress {
         background: rgba(250, 250, 250, 0.1);
