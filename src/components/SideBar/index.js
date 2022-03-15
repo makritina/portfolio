@@ -20,24 +20,24 @@ const SideBar = () => {
           </div>
           <ul className="sidebar_menu">
             <div className="links">
-              <Link to="/">
+              <Link to="/" onClick={() => setActive(false)}>
                 <div>Home </div>
               </Link>
             </div>
 
             <div className="links">
-              <Link to="/about">
+              <Link to="/about" onClick={() => setActive(false)}>
                 <div>About</div>
               </Link>
             </div>
 
-            <div className="links">
+            <div className="links" onClick={() => setActive(false)}>
               <Link to="/work">
                 <div>My Projects </div>
               </Link>
             </div>
 
-            <div className="links">
+            <div className="links" onClick={() => setActive(false)}>
               <Link to="/contact">
                 <div>Contact</div>
               </Link>
