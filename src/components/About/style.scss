@@ -136,29 +136,34 @@
 
 //here
 @media screen and (max-width:480px) {
-    .wrap {
-        padding: 3rem;
+    .about {
 
-        h1 {
-            font-size: 4rem;
-        }
+        .wrap {
+            padding-top: 0;
+            padding-left: 3rem;
+            padding-bottom: 0;
 
-        #pabout {
-            font-size: 2rem !important;
-            padding: 0 !important;
-        }
+            h1 {
+                font-size: 4rem;
+            }
 
-        .icons {
-            font-size: 1.7rem;
+            #pabout {
+                font-size: 2rem !important;
+                padding: 0 !important;
+            }
 
-            .fa-react,
-            .fa-html5,
-            .fa-js,
-            .fa-css3,
-            .fa-github,
-            .fa-database {
+            .icons {
+                font-size: 1.7rem;
 
-                margin: 1rem;
+                .fa-react,
+                .fa-html5,
+                .fa-js,
+                .fa-css3,
+                .fa-github,
+                .fa-database {
+
+                    margin: 1rem;
+                }
             }
         }
 
@@ -182,7 +187,7 @@
     .wrap {
 
         .aboutme {
-            padding: 0 0;
+            padding: 0;
         }
 
         h1 {

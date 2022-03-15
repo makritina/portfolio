@@ -23,49 +23,64 @@ const Work = (props) => {
             </div>
             <div className="row justify-content-center">
               <div className="col-md-6 col-lg-4 mb-5">
-                <div
-                  className="portfolio-item mx-auto"
-                  data-bs-toggle="modal"
-                  data-bs-target="#portfolioModal1"
+                <a
+                  href="https://burgerwebsitee.netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                    <div className="portfolio-item-caption-content text-center text-white">
-                      <p>Brochure Burger Website</p>
-                      <span> React Js HTML CSS JavaScript Bootstrap </span>
+                  <div className="portfolio-item mx-auto">
+                    <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                      <div className="portfolio-item-caption-content text-center text-white">
+                        <p>Brochure Burger Website</p>
+                        <span> React Js HTML CSS JavaScript Bootstrap </span>
+                      </div>
                     </div>
+
+                    <img
+                      className="img-fluid"
+                      src={burger}
+                      alt="Burger Website"
+                    />
                   </div>
-                  <img className="img-fluid" src={burger} alt="..." />
-                </div>
+                </a>
               </div>
               <div className="col-md-6 col-lg-4 mb-5">
-                <div
-                  className="portfolio-item mx-auto"
-                  data-bs-toggle="modal"
-                  data-bs-target="#portfolioModal2"
+                <a
+                  href="https://moviebrowserapp.netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                    <div className="portfolio-item-caption-content text-center text-white">
-                      <p>Api Movie Browser Project </p>
-                      <span> React Js HTML CSS JavaScript Bootstrap </span>
+                  <div className="portfolio-item mx-auto">
+                    <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                      <div className="portfolio-item-caption-content text-center text-white">
+                        <p>Api Movie Browser Project </p>
+                        <span> React Js HTML CSS JavaScript Bootstrap </span>
+                      </div>
                     </div>
+                    <img className="img-fluid" src={movie} alt="api website" />
                   </div>
-                  <img className="img-fluid" src={movie} alt="..." />
-                </div>
+                </a>
               </div>
               <div className="col-md-6 col-lg-4 mb-5">
-                <div
-                  className="portfolio-item mx-auto"
-                  data-bs-toggle="modal"
-                  data-bs-target="#portfolioModal3"
+                <a
+                  href="https://conf-project.netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                    <div className="portfolio-item-caption-content text-center text-white">
-                      <p>Bootstrap Project </p>
-                      <span> HTML CSS JavaScript Bootstrap </span>
+                  <div className="portfolio-item mx-auto">
+                    <div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                      <div className="portfolio-item-caption-content text-center text-white">
+                        <p>Bootstrap Project </p>
+                        <span> HTML CSS JavaScript Bootstrap </span>
+                      </div>
                     </div>
+                    <img
+                      className="img-fluid"
+                      src={bootstrap}
+                      alt="bootsrap website"
+                    />
                   </div>
-                  <img className="img-fluid" src={bootstrap} alt="..." />
-                </div>
+                </a>
               </div>
             </div>
           </div>
