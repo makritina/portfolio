@@ -35,7 +35,6 @@
 @media screen and (max-width:800px) {
     .home {
         position: relative;
-        background-color: red;
 
         .wrap {
             width: 100%;
@@ -138,7 +137,7 @@ p {
 
         p {
             padding-top: 7rem;
-            font-size: 5rem;
+            font-size: 5rem !important;
             padding-right: 3rem;
         }
     }
