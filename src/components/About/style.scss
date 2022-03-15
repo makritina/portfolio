@@ -52,9 +52,6 @@
 }
 
 
-
-
-
 .aboutme {
     #pabout {
         font-size: 3rem;
@@ -138,7 +135,7 @@
 }
 
 //here
-@media screen and (max-width:480px) and (min-width: 400px) {
+@media screen and (max-width:480px) {
     .wrap {
         padding: 3rem;
 
@@ -183,10 +180,13 @@
 
 @media screen and (max-width:375px) {
     .wrap {
-        padding: 1.2rem;
+
+        .aboutme {
+            padding: 8rem 0 0;
+        }
 
         h1 {
-            font-size: 3rem;
+            font-size: 2.7rem;
         }
 
         #pabout {
@@ -201,17 +201,18 @@
 
         .skills {
             span {
-                font-size: 1rem;
+                font-size: 0.9rem !important;
             }
         }
 
         .icons {
-            font-size: 1.3rem;
+            font-size: 1rem;
             padding: 0;
             padding-top: 2.8rem;
-            padding-left: 3rem;
         }
     }
+
+
 }
 
 @media screen and (max-width:325px) {
@@ -234,7 +235,8 @@
         }
 
         .icons {
-            font-size: 1.2rem;
+            font-size: 1rem !important;
+            padding: 1rem 0 0;
 
 
             .fa-react,
