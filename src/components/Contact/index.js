@@ -1,16 +1,34 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./style.scss";
+import emailjs from "emailjs-com";
 
 export default function Contact(props) {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
+  const form = useRef();
 
-  const handleSubmit = (event) => {
+  const handleSubmit = (e) => {
     setEmail("");
     setName("");
     setMessage("");
-    event.preventDefault();
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_9qzpbzr",
+        "template_buggztk",
+        form.current,
+        "HdfiaeovpkTpseEHZ"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   return (
@@ -18,9 +36,8 @@ export default function Contact(props) {
       <div className="wrap">
         <form
           className="contact100-form validate-form"
+          ref={form}
           onSubmit={handleSubmit}
-          action="https://formsubmit.co/makristamatina19@gmail.com.com"
-          method="POST"
         >
           <span className="contact100-form-title">Get in touch</span>
 
@@ -76,7 +93,9 @@ export default function Contact(props) {
           </div>
 
           <div className="container-contact100-form-btn">
-            <button className="contact100-form-btn">Send</button>
+            <button type="submit" className="contact100-form-btn">
+              Send
+            </button>
           </div>
         </form>
 
