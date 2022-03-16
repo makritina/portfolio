@@ -3,6 +3,7 @@ import "./style.scss";
 import burger from "./../../assets/burger.png";
 import movie from "./../../assets/movie.png";
 import bootstrap from "./../../assets/bootstrap.png";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Work = (props) => {
   return (
@@ -36,7 +37,8 @@ const Work = (props) => {
                       </div>
                     </div>
 
-                    <img
+                    <LazyLoadImage
+                      effect="blur"
                       className="img-fluid"
                       src={burger}
                       alt="Burger Website"
@@ -57,7 +59,12 @@ const Work = (props) => {
                         <span> React Js HTML CSS JavaScript Bootstrap </span>
                       </div>
                     </div>
-                    <img className="img-fluid" src={movie} alt="api website" />
+                    <LazyLoadImage
+                      effect="blur"
+                      className="img-fluid"
+                      src={movie}
+                      alt="api website"
+                    />
                   </div>
                 </a>
               </div>
@@ -74,7 +81,8 @@ const Work = (props) => {
                         <span> HTML CSS JavaScript Bootstrap </span>
                       </div>
                     </div>
-                    <img
+                    <LazyLoadImage
+                      effect="blur"
                       className="img-fluid"
                       src={bootstrap}
                       alt="bootsrap website"
